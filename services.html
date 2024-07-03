@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homefix Renovation Services</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+
+    <style>
+        #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 120px;
+        height: 120px;
+        margin: -76px 0 0 -76px;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #ed1d24;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+        }
+
+      
+        .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s
+        }
+
+        @-webkit-keyframes animatebottom {
+        from { bottom:-100px; opacity:0 } 
+        to { bottom:0px; opacity:1 }
+        }
+
+        @keyframes animatebottom { 
+        from{ bottom:-100px; opacity:0 } 
+        to{ bottom:0; opacity:1 }
+        }
+
+        #myDiv {
+        display: none;
+        }
+    </style>
+
+</head>
+<body onload="myFunction()" style="font-family: Montserrat">
+
+    <div id="loader"></div>
+
+    
+    <div class="page-loader">
+        <div class="spinner"></div>        
+    </div>
+  
+    
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="assets/images/logo.jpg" class="img-fluid" style="max-width: 200px;" alt="">
+                </div>
+                <ul class="nav-links" style="z-index: 20;height: auto;padding-top: 15px;">
+                    <li style="padding: 10px 0px;"><a href="index.html">Home</a></li>
+                    <li style="padding: 10px 0px;"><a href="about.html">About</a></li>
+                    <li class="activeX" style="padding: 10px 0px;"><a href="services.html">Services</a></li>
+                    <li style="padding: 10px 0px;"><a href="project.html">Projects</a></li>
+                    <li style="padding: 10px 0px;"><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+            </nav>  
+        </header>        
+        
+        <div class="container-fluid m-0 p-0">
+            <img src="assets/images/bg/services-bg.jpg" class="img-fluid" style="background-size: cover;background-repeat: no-repeat;">
+            
+        </div>
+
+        <style>
+            @media only screen and (min-width: 992px) 
+            {
+                .services-desktop-display
+                {
+                    display: block;
+                }
+            }
+            
+            @media only screen and (max-width : 600px)
+            {
+                .services-desktop-display
+                {
+                    display: none;
+                }
+            }
+            
+            
+            @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
+            {
+                .services-desktop-display
+                {
+                    display: none;
+                }
+            }
+            
+            
+            @media (min-width: 576px) and (max-width: 959px) 
+            {
+                .hide-on-tablet 
+                {
+                    display: none;
+                }
+            }
+            
+            
+             @media only screen and (min-width: 992px)
+            {
+                .services-mobile-display
+                {
+                    display: none;
+                }
+            }
+            
+            @media only screen and (max-width : 600px)
+            {
+                .services-mobile-display
+                {
+                    display: block;
+                }
+            }
+        </style> 
+        
+        <!-- Desktop View Starts Here -->
+        <div class="container mt-5 services-desktop-display">
+            <div class="row">
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s1.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Air Conditioning</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div>                  
+            </div>
+            <hr style="color: cccccc;">
+            <div class="row mt-5">                
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Carpenter</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div> 
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s2.png" class="img-fluid float-end" alt="">
+                </div>                 
+            </div>
+            
+            <hr style="color: cccccc;">
+            <div class="row mt-5">    
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s3.png" class="img-fluid" alt="">
+                </div>            
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Gear Box</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div>                                  
+            </div>
+            <hr style="color: cccccc;">
+            <div class="row mt-5">                
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Plumbing</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div> 
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s4.png" class="img-fluid float-end" alt="">
+                </div>                 
+            </div>
+            
+            <hr style="color: cccccc;">
+            <div class="row mt-5">    
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s5.png" class="img-fluid" alt="">
+                </div>            
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Painting</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div>                                  
+            </div>
+            <hr style="color: cccccc;">
+            <div class="row mt-5">                
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Electrical</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div> 
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s6.png" class="img-fluid float-end" alt="">
+                </div>                 
+            </div>
+            
+            <hr style="color: cccccc;">
+            <div class="row mt-5">    
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s7.png" class="img-fluid" alt="">
+                </div>            
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Roofing</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div>                                  
+            </div>
+            <hr style="color: cccccc;">
+            <div class="row mt-5">                
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Mechanics</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div> 
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s8.png" class="img-fluid float-end" alt="">
+                </div>                 
+            </div>            
+        </div> 
+        <!-- Desktop View Ends Here -->
+
+        <!-- Mobile View Starts Here -->
+        <div class="container mt-5 services-mobile-display hide-on-tablet">
+            <div class="row">
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s1.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Air Conditioning</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div>                  
+            </div>
+            <hr style="color: cccccc;">
+            <div class="row mt-5">    
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s2.png" class="img-fluid" alt="">
+                </div>            
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Carpenter</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div>                                  
+            </div>
+            
+            <hr style="color: cccccc;">
+            <div class="row mt-5">    
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s3.png" class="img-fluid" alt="">
+                </div>            
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Gear Box</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div>                                  
+            </div>
+            <hr style="color: cccccc;">
+            <div class="row mt-5">   
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s4.png" class="img-fluid" alt="">
+                </div>             
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Plumbing</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div>                                  
+            </div>
+            
+            <hr style="color: cccccc;">
+            <div class="row mt-5">    
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s5.png" class="img-fluid" alt="">
+                </div>            
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Painting</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div>                                  
+            </div>
+            <hr style="color: cccccc;">
+            <div class="row mt-5"> 
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s6.png" class="img-fluid" alt="">
+                </div>               
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Electrical</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div>                                  
+            </div>
+            
+            <hr style="color: cccccc;">
+            <div class="row mt-5">    
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s7.png" class="img-fluid" alt="">
+                </div>            
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Roofing</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div>                                  
+            </div>
+            <hr style="color: cccccc;">
+            <div class="row mt-5">     
+                <div class="col-sm-5 mb-5">
+                    <img src="assets/images/services/s8.png" class="img-fluid" alt="">
+                </div>            
+                <div class="col-sm-7">
+                    <h3 style="color: #ed1d24;text-align: left;font-weight: bold;">Mechanics</h3>
+                    <p style="text-align: justify;line-height: 2;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>                    
+                </div>                                 
+            </div>            
+        </div>
+        <!-- Mobile View Ends Here -->
+
+        <div class="container-fluid" style="background-image: url(assets/images/footer-image.jpg)">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <footer class="new_footer_area bg_color">
+                            <div class="new_footer_top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                                                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                                                <p>Don’t miss any updates of our new templates and extensions.!</p>
+                                                <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                                                    <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                                                    <button class="btn btn_get btn_get_two float-end" type="submit">Subscribe</button>
+                                                    <p class="mchimp-errmessage" style="display: none;"></p>
+                                                    <p class="mchimp-sucmessage" style="display: none;"></p>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 mb-4">
+                                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                                                <h3 class="f-title f_600 t_color f_size_18">Useful Links</h3>
+                                                <ul class="list-unstyled f_list">
+                                                    <li><a href="index.html">Home</a></li>
+                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="services.html">Our Services</a></li>
+                                                    <li><a href="project.html">Core Projects</a></li>
+                                                    <li><a href="contact.html">Contact Us</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 mb-4">
+                                            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                                                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                                <ul class="list-unstyled f_list">
+                                                    <li><a href="#">FAQ</a></li>
+                                                    <li><a href="#">Term &amp; conditions</a></li>
+                                                    <li><a href="#">Reporting</a></li>
+                                                    <li><a href="#">Documentation</a></li>
+                                                    <li><a href="#">Privacy</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6">
+                                            <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                                                <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                                                <div class="f_social_icon">
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                    <a href="#" class="fa fa-linkedin"></a>
+                                                    <a href="#" class="fa fa-pinterest"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                                <div class="footer_bg">
+                                    <div class="footer_bg_one"></div>
+                                    <div class="footer_bg_two"></div>
+                                </div>
+                                -->
+                            </div>
+                            <div class="footer_bottom">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-12 col-sm-12">
+                                            <p class="mb-0 f_400">© Monsco Inc.. 2024 All rights reserved.</p>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    
+    <script>
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+
+
+                navLinks.forEach((link, index) => {
+                        if(link.style.animation){
+                        link.style.animation = ''
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0}s`;
+                    }
+                });
+
+                burger.classList.toggle('toggle');
+
+            });
+        }
+
+        navSlide();
+    </script>
+    
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
